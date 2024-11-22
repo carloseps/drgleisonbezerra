@@ -418,25 +418,101 @@ main {
 
 .about {
     display: flex;
+    padding: 40px 175px 0px 175px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     background: whitesmoke;
     color: var(--blue-dark);
 }
 
 .about .container {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-top: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
     padding: 20px;
-    text-align: center;
-    height: 50vh;
+    text-align: left;
+    min-height: 500px;
+    height: max-content;
+    width: 55%;
+    margin: 0 auto;
 }
 
 .about .container h1{
     font-size: 50px;
-    
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-weight: 400;
 }
+
+.about .container h2{
+    font-size: 18.5px;
+    padding-bottom: 20px;
+    font-weight: 100;
+}
+
+.about .container p{
+    font-size: 20.5px;
+    width: 100%;
+    text-align: justify;
+    font-weight: 100;
+}
+
+.about .container-picture picture img{
+    position: relative;
+    display: block;
+    height: 42.5rem;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.about .container-picture {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 0;
+}
+
+.about .botao-cta-2 {
+    border: none;
+    border-radius: 5px;
+    background: var(--blue-dark);
+    color: var(--golden-egg);
+    -webkit-box-shadow: 0 10px 16px 0 rgba(0, 0, 0, .5);
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, .5);
+    display: flex;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 auto;
+    min-width: 5.25rem;
+    min-height: 3rem;
+    padding: .85rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    transition: .71s
+}
+
+.about .botao-cta-2 svg {
+    color: #212121;
+    height: 1.875rem;
+    transition: transform .2s linear;
+    width: 1.875rem;
+    margin-right: 10px;
+}
+
+.about .botao-cta-2:hover {
+    background: var(--blue-medium);
+    border: none;
+    transition: .72s
+}
+
 
 .treatment {
     display: flex;
@@ -542,6 +618,24 @@ main {
         margin: 10px;
         height: fit-content;
     }
+    .about{
+        min-height: fit-content;
+        flex-direction: column;
+    }
+    .about .container{
+        margin-top: 50px;
+        width: 100%;
+        text-align: center;
+    }
+    .about .container p{
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .about .container-picture picture img{
+        height: 35rem;
+    }
+    
 }
 
 @media (max-width: 767px) {
@@ -619,6 +713,34 @@ main {
     }
     .specialities .container-items .box-items-with-image, .specialities .botao-cta-2 {
         width: 90%;
+    }
+    .about{
+        padding: 0px 0px 0px 0px
+    }
+    .about .container h1{
+        font-size: 40px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .about .container h2{
+        font-size: 30px;
+        margin: 0 auto;
+        width: 80%;
+    }
+    .about .container p{
+        font-size: 17.5px;
+        width: 90%;
+        margin-top: 0px;
+        margin-bottom: 10px
+    }
+    .about .botao-cta-1 {
+        width: 90%;
+        font-size: 15px;
+        font-weight: 600;
+        margin: 0 auto;
+        min-width: 6.25rem;
+        min-height: 3.5rem;
+        padding: .85rem;
     }
 }
 
