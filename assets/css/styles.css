@@ -170,7 +170,7 @@ p {
 .navbar .navlinks {
     display: none;
     color: var(--golden-egg);
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     font-weight: 400;
     flex-basis: 100%;
     height: 100%;
@@ -186,6 +186,23 @@ p {
 .navbar .navlinks li a {
     margin-bottom: .5rem;
     margin-top: 1.5rem
+}
+
+.navbar .navlinks .lastli{
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navlinks .lastli a{
+    background: rgb(242,206,148);
+    color: #041E42;
+    height: 45%;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.navbar .navlinks .lastli a:hover{
+    background: wheat;
 }
 
 .menu {
@@ -548,7 +565,6 @@ main {
 
 .treatment .container h3{
     font-size: 22.5px;
-    text-transform: uppercase;
     font-weight: 600;
     color: var(--blue-dark);
     width: 100%;
@@ -631,7 +647,7 @@ main {
     -webkit-box-shadow: 0 10px 16px 0 rgba(0, 0, 0, .5);
     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, .5);
     display: flex;
-    width: 65%;
+    width: 100%;
     font-size: 16px;
     font-weight: 500;
     margin: 0 auto;
@@ -640,7 +656,6 @@ main {
     padding: .85rem;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
     margin-bottom: 30px;
     text-transform: uppercase;
     transition: .71s
@@ -654,7 +669,7 @@ main {
 
 .local {
     padding: 4rem 0rem 4rem 0rem;
-    background: var(--blue-dark);
+    background: whitesmoke;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -676,7 +691,7 @@ main {
     text-transform: uppercase;
     font-size: 37.5px;
     margin-bottom: 10px;
-    color: #fff
+    color: var(--blue-dark)
 }
 
 .local .container iframe{
@@ -687,7 +702,7 @@ main {
 
 .local .container p{
     font-size: 18px;
-    color: whitesmoke;
+    color: var(--blue-dark);
     width: 80%;
 }
 
@@ -757,14 +772,13 @@ main {
 
 .local .botao-cta-2 {
     border: none;
-    border-radius: 5px;
     background: var(--blue-dark);
     color: whitesmoke;
     -webkit-box-shadow: 0 10px 16px 0 rgba(0, 0, 0, .5);
     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, .5);
     display: flex;
-    width: 79.5%;
-    font-size: 16px;
+    width: 85%;
+    font-size: 13px;
     font-weight: 600;
     margin: 0 auto;
     min-width: 5.25rem;
@@ -785,25 +799,96 @@ main {
 }
 
 .contact {
+    padding-top: 60px;
     display: flex;
+    min-height: 40vh;
     align-items: center;
     justify-content: center;
-    background: #f3f3f3;
-    color:var(--blue-dark);
+    background: var(--blue-dark);
+    color:var(--golden-egg);
 }
 
-.contact .container {
+.contact .container-picture{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+}
+
+.contact .container-picture p{
+    font-size: 20px;
+    font-weight: 100;
+    opacity: .85;
+}
+
+.contact .container-picture picture {
     padding: 20px;
-    text-align: center;
-    height: 50vh;
-    background: var(--blue);
 }
 
-.contact .container h1{
-    font-size: 50px;
+.contact .container-picture img{
+    width: 15rem;
+}
+
+.footer {
+    background: var(--blue-dark)
+}
+
+.footer .container {
+    padding: 2rem
+}
+
+.footer .footer-redes-sociais {
+    display: flex;
+    list-style: none;
+    justify-content: center
+}
+
+.footer .footer-redes-sociais li a {
+    align-items: center;
+    background-color: var(--golden-egg);
+    border-radius: 1.5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .25);
+    display: flex;
+    height: 5rem;
+    justify-content: center;
+    margin: 1rem;
+    width: 5rem;
+    transition: background-color .2s linear
+}
+
+.footer .footer-redes-sociais li a svg {
+    color: var(--blue-dark);
+    height: 1.875rem;
+    transition: transform .2s linear;
+    width: 1.875rem
+}
+
+.footer .footer-redes-sociais li a:hover {
+    background-color: var(--blue)
+}
+
+.footer .footer-redes-sociais li a:hover svg {
+    transform: scale(1.275)
+}
+
+.footer .footer-copyright {
+    color: var(--blue);
+    opacity: .3;
+    font-weight: 300;
+    margin-top: 1rem;
+    text-align: center
+}
+
+@media (min-width:768px) {
+    .footer .footer-redes-sociais li a {
+        height: 5.5rem;
+        width: 5.5rem
+    }
+
+    .footer .footer-redes-sociais li a svg {
+        height: 2rem;
+        width: 2rem
+    }
 }
 
 @media (max-width: 1266px) {
