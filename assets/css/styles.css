@@ -243,12 +243,12 @@ main {
     text-align: left;
     min-height: 500px;
     height: max-content;
-    width: 60%;
+    width: 65%;
     margin: 0 auto;
 }
 
 .home .container h1{
-    font-size: 40px;
+    font-size: 45px;
     font-family: "Manrope", sans-serif;
     padding-bottom: 20px;
 }
@@ -454,7 +454,7 @@ main {
     text-align: left;
     min-height: 500px;
     height: max-content;
-    width: 65%;
+    width: 70%;
 }
 
 .about .container h1{
@@ -669,6 +669,106 @@ main {
     transition: .72s
 }
 
+.treat {
+    background: var(--blue-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.treat .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.treat .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px 30px 0px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.treat .container h1{
+    font-size: 40.5px;
+    color: whitesmoke;
+    width: 80%;
+}
+
+.treat .container h2{
+    padding: 0px 0px 30px 0px;
+    font-size: 25px;
+    font-weight: 700;
+    color:var(--golden-egg);
+    text-transform: uppercase;
+}
+
+.treat .container-items {
+    padding-bottom: 15px;
+    list-style: none;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly
+}
+
+.treat .container-items .box-items {
+    border-radius: 2.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--golden-egg);
+    text-align: center;
+    height: auto;
+    width: 30%;
+    max-width:800px;
+    max-height:800px;
+    min-height: 60px;
+    margin-bottom: 10px;
+}
+
+.treat .container-items .box-items h1{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 300;
+    width: 90%;
+    color: var(--blue-dark)
+}
+
+.treat .botao-cta-2 {
+    border: none;
+    background: whitesmoke;
+    color: var(--blue-dark);
+    -webkit-box-shadow: 0 10px 16px 0 rgba(0, 0, 0, .5);
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, .5);
+    display: flex;
+    width: 65%;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 auto;
+    min-width: 5.25rem;
+    min-height: 4rem;
+    padding: .85rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    transition: .71s
+}
+
+.treat .botao-cta-2:hover {
+    background: var(--blue-soft);
+    border: none;
+    transition: .72s
+}
+
 .local {
     padding: 4rem 0rem 4rem 0rem;
     background: whitesmoke;
@@ -867,7 +967,7 @@ main {
 }
 
 .footer .footer-redes-sociais li a:hover {
-    background-color: var(--blue)
+    background-color: var(--blue-soft)
 }
 
 .footer .footer-redes-sociais li a:hover svg {
@@ -876,7 +976,7 @@ main {
 
 .footer .container .divider{
     display: block;
-    border: .01rem solid var(--blue);
+    border: .01rem solid var(--golden-egg);
     width: 100%;
     opacity: .25;
     margin-top: 50px;
@@ -1124,6 +1224,37 @@ main {
     .treatment .container-items .box-items-with-image, .treatment .botao-cta-2 {
         width: 90%;
     }
+    .treat .container{
+        padding: 30px;
+        margin-top: 20px;
+    }
+    .treat .container h1{
+        width: 100%;
+        font-size: 27.5px;
+    }
+    .treat .container h2{
+        width: 80%;
+        font-size: 25px;
+    }
+    .treat .container-items .box-items {
+        display: block;
+        padding: 25px;
+        width: 45%;
+        text-align: center;
+        margin: 10px;
+        height: fit-content;
+    }
+    .treat .container-items .box-items h1 {
+        margin: 0 auto;
+        width: 90%;
+    }
+    .treat .botao-cta-2 {
+        width: 92.5%;
+        font-size: 15px;
+        min-width: 6.25rem;
+        min-height: 3.5rem;
+        margin: 10px 0px 20px 0px;
+    }
     .local .container .container-outside{
         flex-direction: column;
     }
@@ -1134,6 +1265,12 @@ main {
     }
     .local .container iframe{
         width: 90%;
+    }
+}
+
+@media (max-width:675px){
+    .treat .container-items .box-items {
+        width: 100%;
     }
 }
 
