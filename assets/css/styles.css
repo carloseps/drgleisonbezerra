@@ -1156,7 +1156,8 @@ main {
     }
     .specialities .container-items .box-items-with-image h1 {
         margin: 0 auto;
-        width: 90%;
+        width: 100%;
+        font-size: 1.5em;
     }
     .specialities .botao-cta-2 {
         width: 92.5%;
