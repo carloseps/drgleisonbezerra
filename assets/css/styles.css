@@ -248,7 +248,7 @@ main {
 }
 
 .home .container h1{
-    font-size: 45px;
+    font-size: 3em;;
     font-family: "Manrope", sans-serif;
     padding-bottom: 20px;
 }
@@ -392,7 +392,7 @@ main {
 
 .specialities .container-items .box-items-with-image h1{
     padding: 20px 0px 20px 0px;
-    font-size: 28px;
+    font-size: 1.7em;
     text-transform: uppercase;
     width: 90%;
     margin: 0 auto;
@@ -626,7 +626,7 @@ main {
 
 .treatment .container-items .box-items-with-image h1{
     padding: 20px 0px 20px 0px;
-    font-size: 28px;
+    font-size: 1.7em;
     text-transform: uppercase;
     width: 90%;
     margin: 0 auto;
@@ -1147,11 +1147,11 @@ main {
     }
     .specialities .container h1{
         width: 100%;
-        font-size: 27.5px;
+        font-size: 25.5px;
     }
     .specialities .container h2{
-        width: 80%;
-        font-size: 25px;
+        width: 100%;
+        font-size: 22px;
     }
     .specialities .container-items .box-items-with-image h1 {
         margin: 0 auto;
@@ -1178,7 +1178,7 @@ main {
     .about .container h2{
         font-size: 18px;
         margin: 0 auto;
-        width: 100%;
+        width: 90%;
     }
     .about .container p{
         font-size: 17.5px;
@@ -1213,6 +1213,7 @@ main {
     .treatment .container-items .box-items-with-image h1 {
         margin: 0 auto;
         width: 90%;
+        font-size: 1.5em;
     }
     .treatment .botao-cta-2 {
         width: 92.5%;
