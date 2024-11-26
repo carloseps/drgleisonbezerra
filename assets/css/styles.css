@@ -248,9 +248,10 @@ main {
 }
 
 .home .container h1{
-    font-size: 3em;;
+    font-size: 3em;
     font-family: "Manrope", sans-serif;
     padding-bottom: 20px;
+    width: 80%;
 }
 
 .home .container h2{
