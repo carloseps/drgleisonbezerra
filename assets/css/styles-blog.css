@@ -180,33 +180,34 @@ p {
 .navbar .navlinks .lastli a:hover {
     background: wheat;
 }
+.navbar .navlinks .dropdown {
+    position: relative;
+}
 
 .menu {
     background-color: transparent;
-    border: none;
+    border: none
 }
 
 .linha {
     background-color: var(--golden-egg);
-    height: 0.15rem;
+    height: .15rem;
     width: 1.875rem;
     margin: 5px;
 }
 
-.navlinks .dropdown:hover .dropdown-menu,
-.navlinks .dropdown:focus-within .dropdown-menu,
-.dropdown #down {
+.navlinks .dropdown.active .dropdown-menu {
     display: block;
 }
 
 .dropdown-menu {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 100%; 
     min-width: 200px;
     background-color: #f9f9f9;
     list-style: none;
-    padding: 0px;
+    padding: 0;
     margin: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
     z-index: 1000;
@@ -216,18 +217,20 @@ p {
 #down {
     display: inline-block;
     padding-left: 8px;
-    padding-bottom: 8px;
+    padding-bottom: 10px;
 }
-
+ 
 .dropdown-menu li {
     margin: 0;
     font-size: 0.75rem;
 }
 
-.dropdown-menu a {
+.dropdown-menu li a {
     width: 100%;
     color: black;
-    padding: 20px !important;
+    padding: 15px!important;
+    margin-bottom: 0!important;
+    margin-top: 0!important;
     display: block;
     text-decoration: none;
     margin: 0 auto;
