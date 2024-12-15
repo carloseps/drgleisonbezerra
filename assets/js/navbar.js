@@ -1,8 +1,10 @@
-(function() {
+(function () {
     const navbar = document.querySelector('.navbar');
     const button = navbar.querySelector('.menu');
     const nav = navbar.querySelector('.navlinks');
     const navLinks = nav.querySelectorAll('li a');
+    const dropdownToggle = navbar.querySelector('.dropdown-toggle'); 
+    const dropdown = navbar.querySelector('.dropdown'); 
 
     button.onclick = () => {
         navbar.classList.toggle('active');
@@ -17,5 +19,16 @@
             navbar.classList.remove('active');
             nav.setAttribute('aria-expanded', 'false');
         };
+    });
+
+    dropdownToggle.onclick = (event) => {
+
+        dropdown.classList.toggle('active');
+    };
+
+    document.addEventListener('click', (event) => {
+        if (!dropdown.contains(event.target) && !dropdownToggle.contains(event.target)) {
+            dropdown.classList.remove('active');
+        }
     });
 })();
